@@ -1,4 +1,4 @@
-import Icon from "./pizza-home.jpeg";
+import Icon from "./images/pizza-home.jpeg";
 
 export default function HomePage() {
     const mainContent = document.querySelector("#content");
