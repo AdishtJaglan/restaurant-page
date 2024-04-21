@@ -10,9 +10,11 @@ export default function LocationPage() {
     address.textContent = "🏠 Rashtrapati Bhawan, President's Estate, New Delhi, Delhi 110004, India";
 
     locationImg.src = location;
+
     locationImg.classList.add("location-img");
+    mainContent.classList.add("location-container");
 
     mainContent.appendChild(locationImg);
-    mainContent.appendChild(phNo);
     mainContent.appendChild(address);
+    mainContent.appendChild(phNo);
 }
