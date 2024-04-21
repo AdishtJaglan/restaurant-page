@@ -21,7 +21,7 @@ export default function Menu() {
     mainContent.appendChild(
         createMenuItem(
             "Marinara",
-            "Tomato sauce, garlic, oregano, extra virgin olive oil, salt.",
+            "Tomato sauce, garlic, oregano, extra virgin olive oil, ham (prosciutto cotto), mushrooms, salt.",
             2
         )
     );

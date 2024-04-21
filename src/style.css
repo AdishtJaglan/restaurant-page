@@ -1,3 +1,13 @@
+:root {
+    --primary-font: "Italianno", cursive;
+    --secondary-font: "Bebas Neue", sans-serif;
+
+    --bg-primary: #e6ccb2;
+    --bg-secondary: #ede0d4;
+
+    --text-primary: #00000075;
+}
+
 body {
     height: 100vh;
     width: 100%;
@@ -7,7 +17,7 @@ body {
     display: grid;
     grid-template-rows: 0.1fr auto;
 
-    background-color: #ede0d4;
+    background-color: var(--bg-secondary);
 }
 
 /* nav bar and layout styling */
@@ -24,7 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    background-color: #e6ccb2;
+    background-color: var(--bg-primary);
 }
 
 nav {
@@ -41,10 +51,11 @@ nav {
 header p {
     margin-left: 10%;
 
-    font-size: 32px;
+    font-size: 64px;
     font-weight: 700;
 
-    color: #00000075;
+    color: var(--text-primary);
+    font-family: var(--primary-font);
 }
 
 nav button {
@@ -55,9 +66,12 @@ nav button {
     width: 15%;
 
     font-size: 18px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-style: normal;
 
-    background-color: #e6ccb2;
-    color: #00000075;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
 
     cursor: pointer;
 }
@@ -77,12 +91,13 @@ nav button:hover {
 
     gap: 16px;
 
-    background-color: #e6ccb2;
+    background-color: var(--bg-primary);
 
     width: 80%;
     height: 65%;
 
     border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .heading-container {
@@ -95,18 +110,11 @@ nav button:hover {
 }
 
 .heading-container p {
-    color: #00000075;
-}
+    color: var(--text-primary);
+    font-family: var(--primary-font);
 
-.heading-container p:nth-child(1) {
-    padding: 6px;
+    font-size: 40px;
     margin: 12px;
-    font-size: 24px;
-}
-
-.heading-container p:nth-child(2) {
-    margin: 12px;
-    font-size: 24px;
 }
 
 .heading-container button {
@@ -117,10 +125,11 @@ nav button:hover {
     width: 30%;
     height: 5%;
 
-    color: #00000075;
-    background-color: #ede0d4;
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
 
-    font-size: 14px;
+    font-size: 22px;
+    font-family: var(--primary-font);
 }
 
 .heading-container button:hover {
@@ -132,6 +141,7 @@ nav button:hover {
     height: auto;
 
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* menu page */
@@ -149,7 +159,8 @@ nav button:hover {
 
     width: 50%;
 
-    background-color: #e6ccb2;
+    background-color: var(--bg-primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .menu-card {
@@ -164,7 +175,7 @@ nav button:hover {
 
     border-radius: 16px;
 
-    background-color: #00000075;
+    background-color: var(--text-primary);
     color: white;
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -175,13 +186,15 @@ nav button:hover {
 }
 
 .menu-card p:nth-child(1) {
-    font-size: 26px;
+    font-size: 36px;
     font-weight: bold;
+    font-family: var(--primary-font);
 }
 
 .menu-card p:nth-child(2) {
     font-size: 16px;
     font-weight: 100;
+    font-family: var(--secondary-font);
 }
 
 /* location page */
@@ -194,9 +207,10 @@ nav button:hover {
     align-items: center;
 
     padding-top: 48px;
-    background-color: #e6ccb2;
+    background-color: var(--bg-primary);
 
     border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .location-img {
@@ -204,11 +218,13 @@ nav button:hover {
     height: auto;
 
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .location-container p {
     font-size: 18px;
     font-weight: 100;
+    font-family: var(--secondary-font);
 
-    color: #00000075;
+    color: var(--text-primary);
 }
