@@ -2,6 +2,7 @@ import home from "./home";
 import location from "./location";
 import clear from "./clear";
 import menu from "./menu";
+import "./style.css";
 
 const locationButton = document.querySelector(".location");
 const menuButton = document.querySelector(".menu");
