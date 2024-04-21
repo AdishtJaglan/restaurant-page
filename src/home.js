@@ -1,11 +1,26 @@
+import Icon from "./pizza-home.jpeg";
+
 export default function HomePage() {
     const mainContent = document.querySelector("#content");
-    const description = document.createElement("p");
-    const heading = document.createElement("h1");
+    const innerDiv = document.createElement("div");
+    const descriptionOne = document.createElement("p");
+    const descriptionTwo = document.createElement("p");
+    const descriptionBtn = document.createElement("button");
+    const img = new Image();
 
-    heading.textContent = "Pizzeria 7";
-    description.textContent = "this is the best place for food around town.";
+    descriptionOne.textContent = "Life's too short for bland pizza,";
+    descriptionTwo.textContent = "come experience a flavor explosion with us.";
+    descriptionBtn.textContent = "try it->";
 
-    mainContent.appendChild(heading);
-    mainContent.appendChild(description);
+    innerDiv.appendChild(descriptionOne);
+    innerDiv.appendChild(descriptionTwo);
+    innerDiv.appendChild(descriptionBtn);
+
+    img.src = Icon;
+    img.classList.add("landing-page-img");
+    innerDiv.classList.add("heading-container");
+    mainContent.classList.add("home-styles");
+
+    mainContent.appendChild(innerDiv);
+    mainContent.appendChild(img);
 }
