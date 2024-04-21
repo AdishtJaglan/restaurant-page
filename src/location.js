@@ -1,4 +1,4 @@
-import location from "./images/location.png";
+import location from "./images/location.jpeg";
 
 export default function LocationPage() {
     const mainContent = document.querySelector("#content");
