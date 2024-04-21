@@ -10,7 +10,7 @@ export default function HomePage() {
 
     descriptionOne.textContent = "Life's too short for bland pizza,";
     descriptionTwo.textContent = "come experience a flavor explosion with us.";
-    descriptionBtn.textContent = "try it->";
+    descriptionBtn.textContent = "try it -->";
 
     innerDiv.appendChild(descriptionOne);
     innerDiv.appendChild(descriptionTwo);
