@@ -61,3 +61,32 @@ header p {
 }
 
 /* menu page */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-card {
+    background-color: aqua;
+    width: 60%;
+    margin: 12px;
+    padding: 12px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 16px;
+}
+
+.menu-card p:nth-child(1) {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.menu-card p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 100;
+}

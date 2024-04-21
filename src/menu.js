@@ -76,18 +76,27 @@ export default function Menu() {
 }
 
 function createMenuItem(name, ingredient, num) {
+    const mainContent = document.querySelector("#content");
     const card = document.createElement("div");
+    const name_ingredient_holder = document.createElement("div");
     const item_ingredient = document.createElement("p");
     const item_name = document.createElement("p");
     const item_img = new Image();
 
     item_name.textContent = name;
     item_ingredient.textContent = ingredient;
+
+    name_ingredient_holder.appendChild(item_name);
+    name_ingredient_holder.appendChild(item_ingredient);
+
     item_img.src = `./images/${num}-pizza.png`;
 
-    card.appendChild(item_name);
-    card.appendChild(item_ingredient);
     card.appendChild(item_img);
+    card.appendChild(name_ingredient_holder);
+
+    card.classList.add("menu-card");
+    name_ingredient_holder.classList.add("name-ingredient-holder");
+    mainContent.classList.add("menu-container");
 
     return card;
 }
